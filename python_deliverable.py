@@ -8,7 +8,7 @@ if useful_letter[0] in 'aeiou':
 elif useful_letter == 'y':
     print(f"depending on the context, {letter} can be used as a consonant or a vowel")
 else:
-    print('{letter} is a consonant')
+    print(f'{letter} is a consonant')
 
 # Exercise 02: Length of Phrase: 
 print('EXERCISE 2')
@@ -62,9 +62,9 @@ while term <= 50:
     b = num
     term += 1 
 
-# Exercise 06: Season q
+# Exercise 06: Season 
 print('EXERCISE 6')
-month = input('Please enter the first 3 digits of the month: ').upper()
+month = input('Please enter the first 3 letters of the month: ').upper()
 day = int(input('Please enter the day of the month: '))
 season = "nonsense"
 if month in ("JAN", "FEB"):
