@@ -1,4 +1,5 @@
 # Exercise 01: Vowel or Consonant
+print('EXERCISE 1')
 letter = input('Please enter a letter of the alphabet: ')
 useful_letter = letter.lower()
 
@@ -10,6 +11,7 @@ else:
     print('{letter} is a consonant')
 
 # Exercise 02: Length of Phrase: 
+print('EXERCISE 2')
 while True:
     letter = input('Please enter a word or phrase: ')
     print(f'What you entered is {len(letter)} characters long')
@@ -20,7 +22,7 @@ while True:
         break
 
 # Exercise 03: Calculate Dog Years
-
+print('EXERCISE 3')
 age = int(input('How old is your dog in human years? '))
 
 if age <= 2:
@@ -31,6 +33,7 @@ else:
 print(f"The dog's age in dog years is {dog_years}.")
 
 # Exercise 04: What Kind of Triangle
+print('EXERCISE 4')
 a = int(input('Enter the length of side a of the triangle: '))
 b = int(input('Enter the length of side b of the triangle: '))
 c = int(input('Enter the length of side c of the triangle: '))
@@ -43,4 +46,18 @@ else:
     type = "a scalene"
 
 print(f'A triangle with sides of {a}, {b}, & {c} units is {type} triangle.')
-    
+
+
+# Exercise 05: Fibonacci Sequence
+print('EXERCISE 5')
+a = 0
+print(f'term: 1 / number: {a}')
+b = 1
+print(f'term: 2 / number: {b}')
+term = 3
+while term <= 50:
+    num = a + b # 1 / 2 / 
+    print(f'term: {term} / number: {num}') # 3/1; 
+    a = b  
+    b = num
+    term += 1 
