@@ -18,3 +18,14 @@ while True:
         continue
     else:
         break
+
+# Exercise 03: Calculate Dog Years
+
+age = int(input('How old is your dog in human years? '))
+
+if age <= 2:
+    dog_years = age * 10
+else:
+    dog_years = 20 + (age - 2) * 7
+    
+print(f"The dog's age in dog years is {dog_years}.")
