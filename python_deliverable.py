@@ -29,3 +29,18 @@ else:
     dog_years = 20 + (age - 2) * 7
     
 print(f"The dog's age in dog years is {dog_years}.")
+
+# Exercise 04: What Kind of Triangle
+a = int(input('Enter the length of side a of the triangle: '))
+b = int(input('Enter the length of side b of the triangle: '))
+c = int(input('Enter the length of side c of the triangle: '))
+
+if a == b == c:
+    type = "an equilateral"
+elif (a == b) or (a == c) or (b == c):
+    type = "an isosceles"
+else:
+    type = "a scalene"
+
+print(f'A triangle with sides of {a}, {b}, & {c} units is {type} triangle.')
+    
