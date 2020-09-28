@@ -61,3 +61,38 @@ while term <= 50:
     a = b  
     b = num
     term += 1 
+
+# Exercise 06: Season q
+print('EXERCISE 6')
+month = input('Please enter the first 3 digits of the month: ').upper()
+day = int(input('Please enter the day of the month: '))
+season = "nonsense"
+if month in ("JAN", "FEB"):
+        season = 'Winter'
+elif month in ("APR", "MAY"):
+        season = 'Spring'
+elif month in ("JUL", "AUG"):
+        season = 'Summer'
+elif month in ("OCT", "NOV"):
+        season = 'Fall'
+elif month == "DEC":
+    if day >= 21:
+        season = 'Winter'
+    else:
+        season = 'Fall'
+elif month == "MAR":
+    if day < 20:
+        season = 'Winter'
+    else:
+        season = 'Spring'
+elif month == "JUN":
+    if day < 21:
+        season = 'Spring'
+    else:
+        season = 'Summer'
+elif month == 'SEP':
+    if day < 22:
+        season = 'Summer'
+    else:
+        season = 'Fall'
+print(f'{month} {day} is in {season}')
