@@ -9,3 +9,12 @@ elif useful_letter == 'y':
 else:
     print('{letter} is a consonant')
 
+# Exercise 02: Length of Phrase: 
+while True:
+    letter = input('Please enter a word or phrase: ')
+    print(f'What you entered is {len(letter)} characters long')
+    another = input('add a another? (y/n) ')
+    if another == 'y':
+        continue
+    else:
+        break
