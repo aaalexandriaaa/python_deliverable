@@ -9,7 +9,7 @@ def sum_to(n):
     print(f'sum_to ', total)
     return total
 
-sum_to(10)
+sum_to(7) # sums to 28
 
 def largest(inp):
     print(f'largest ', max(inp))
